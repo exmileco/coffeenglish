@@ -399,10 +399,10 @@ img {
 }
 
 .button {
-  padding: 10px 33px;
+  padding: 8px 33px;
   background-color: #0099f1;
   border: none;
-  border-radius: 12px;
+  border-radius: 11px;
   border: none;
 }
 
@@ -411,12 +411,19 @@ img {
 }
 
 .input {
-  padding: 10px 91px;
+  padding: 7px;
   background-color: #c5c5c5;
+  border: none;
+  border-radius: 2px;
+  border: none;
 }
 
-.nav {
-  background-color: #f2f2f2;
+.input:focus {
+  outline: none !important;
+}
+
+nav {
+  background-color: #F2F2F2;
 }
 
 .nav-block {
@@ -502,5 +509,79 @@ img {
   text-decoration: none;
   color: #000000;
   cursor: pointer;
+}
+
+.hero {
+  background-image: url("../img/hero/hero-bg-1170.jpg");
+  background-position: 50% 50%;
+  background-repeat: repeat-Y;
+  background-color: #F2F2F2;
+  -webkit-box-shadow: 0px 7px 10px 1px #888888;
+          box-shadow: 0px 7px 10px 1px #888888;
+}
+
+.hero-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.hero-block__title {
+  margin-top: 60px;
+}
+
+.hero-list {
+  margin-top: 33px;
+}
+
+.hero-list__item {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.hero-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 579px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 58px;
+  margin-bottom: 68px;
+}
+
+.hero-form__title {
+  display: block;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-bottom: 24px;
+}
+
+.hero-form__input {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  margin-right: 14px;
+  max-width: 203px;
+}
+
+.hero-form__button {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  max-width: 145px;
 }
 /*# sourceMappingURL=style.css.map */
