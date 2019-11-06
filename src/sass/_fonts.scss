@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Roboto - Regular';
+  src: url('../fonts/roboto-regular.eot');
+  src: url('../fonts/roboto-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/roboto-regular.woff') format('woff'),
+    url('../fonts/roboto-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto - Light';
+  src: url('../fonts/roboto-light.eot');
+  src: url('../fonts/roboto-light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/roboto-light.woff') format('woff'),
+    url('../fonts/roboto-light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto - Medium';
+  src: url('../fonts/roboto-medium.eot');
+  src: url('../fonts/roboto-medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/roboto-medium.woff') format('woff'),
+    url('../fonts/roboto-medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto - Thin';
+  src: url('../fonts/roboto-thin.eot');
+  src: url('../fonts/roboto-thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/roboto-thin.woff') format('woff'),
+    url('../fonts/roboto-thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin roboto_regular {
+  font-family: 'Roboto - Regular', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+@mixin roboto_light {
+  font-family: 'Roboto - Light', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+@mixin roboto_medium {
+  font-family: 'Roboto - Medium', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+@mixin roboto_thin {
+  font-family: 'Roboto - Thin', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0px;
+}

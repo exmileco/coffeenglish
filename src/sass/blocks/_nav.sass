@@ -1,0 +1,51 @@
+.nav
+  background-color: $bg-color
+  &-block
+    padding: 9px 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__logo
+    max-width: 85px
+  &-menu
+    display: flex
+    flex-direction: row
+    &__item
+      list-style: none
+      margin-right: 24px
+      position: relative
+      &:after
+        content: ""
+        position: absolute
+        height: 11px
+        width: 1px
+        background-color: #000000
+        display: block
+        right: -12px
+        top: 5px
+      &:last-child
+        margin-right: 0
+        &:after
+          display: none
+    &__link
+      text-decoration: none
+      cursor: pointer
+
+        
+          
+        
+
+  &-contacts
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &__button
+      padding: 10px 28px
+      margin-bottom: 12px
+      background-color: $text-color
+    &__phone
+      text-decoration: none
+      color: #000000
+      cursor: pointer
+      
