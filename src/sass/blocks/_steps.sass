@@ -1,0 +1,108 @@
+.steps
+  background-color: #ffffff
+  box-shadow: 0px 11px 10px -7px #888888
+  &-block
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    &__title
+      color: #000000
+      font-size: 25px
+      font-weight: 700
+      margin-top: 44px
+      margin-bottom: 94px
+      display: block
+      align-self: center
+      +roboto-bold
+  &-wrapper
+    display: flex
+    justify-content: flex-start
+    position: relative
+    &:nth-child(odd)
+      align-self: flex-end
+    // &:nth-child(3)
+    //   &:after
+    //     display: block
+    //     content: ''
+    //     width: 190px
+    //     height: 75px
+    //     position: absolute
+    //     top: 304px
+    //     left: 339px
+    //     background: url(../img/steps/curve-right-left.png) no-repeat center
+    //     transform: rotate(-4deg)
+    &:last-child
+      .image-wrap::after
+        display: none
+  &-item
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+    // flex-basis: 60%
+    margin-right: 104px
+    &__icon
+      max-width: 58px
+      margin-bottom: 16px
+      color: #c39667
+    &__title
+      color: #000000
+      margin-bottom: 11px
+      font-size: 20px
+      font-weight: 500
+      +roboto-medium
+    &__descr
+      color: #636363
+      font-size: 14px
+      font-weight: 300
+      max-width: 419px
+      &::after
+        content: ''
+        display: block
+        width: 125px
+        height: 2px
+        background-color: #cc9d6c
+        position: relative
+        top: 44px
+        left: 0
+.image
+  &-wrap
+    position: relative
+    &__image
+      max-width: 472px
+      margin-right: 44px
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5)
+      border-radius: 10px
+      background-color: #000000
+      margin-bottom: 69px
+      filter: brightness(40%)
+      transition: 1s
+      display: block
+      // position: relative
+      &:hover
+        filter: none
+    &:after
+      display: block
+      content: ''
+      width: 202px
+      height: 49px
+      position: absolute
+      top: 321px
+      left: 458px
+      background: url(../img/steps/curve-left-right.svg) no-repeat center
+      transform: rotate(12deg)
+    &_curve-back
+      &:after
+        display: block
+        content: ''
+        width: 190px
+        height: 75px
+        position: absolute
+        top: 303px;
+        left: -189px;
+        background: url(../img/steps/curve-right-left.svg) no-repeat center
+        transform: rotate(-4deg)
+
+      
+    

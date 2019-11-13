@@ -8,27 +8,29 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav>
+  <header class="header">
     <div class="container">
-      <div class="nav-block">
-        <img src="img/nav/logo.png" alt="Логотип" class="nav__logo">
-        <ul class="nav-menu">
-          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Главная</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Почему именно я</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Обучение</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Кто добилcя успеха</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Гарантия</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Отзывы</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Вопросы</a></li>
-          <li class="nav-menu__item"><a class="nav-menu__link" href="#">Контакты</a></li>
-        </ul>
-        <div class="nav-contacts">
-          <button class="button nav-contacts__button">Обратный звонок</button>
-          <a href="tel:+79259999999" class="nav-contacts__phone">+7(925) 999-99-99</a>
+      <div class="header-block">
+        <img src="img/header/logo.png" alt="Логотип" class="header__logo">
+        <nav class="nav-block">
+          <ul class="nav-menu">
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Главная</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Почему именно я</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Обучение</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Кто добилcя успеха</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Гарантия</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Отзывы</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Вопросы</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header-contacts">
+          <button class="button header-contacts__button">Обратный звонок</button>
+          <a href="tel:+79259999999" class="header-contacts__phone">+7(925) 999-99-99</a>
         </div>
       </div>
     </div>
-  </nav>
+  </header>
   <main>
     <section class="hero">
       <div class="container">
@@ -48,7 +50,120 @@
         </div>
       </div>
     </section>
-    
+    <section class="steps">
+      <div class="container">
+        <div class="steps-block">
+          <h2 class="steps-block__title">Как проходит обучение</h2>
+          <div class="steps-wrapper">
+            <div class="image-wrap">
+              <img src="img/steps/step-1.jpg" alt="Шаг 1" class="image-wrap__image">
+            </div>
+            <div class="steps-item">
+              <img src="img/steps/money.png" alt="Оплата" class="steps-item__icon">
+              <h3 class="steps-item__title">Оплачиваете курс!</h3>
+              <!-- /.steps-item__title -->
+              <span class="steps-item__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+              <!-- /.steps-item__descr -->
+            </div>
+            <!-- /.steps-item -->
+          </div>
+          <!-- <div class="steps-block__curve"></div> -->
+          <div class="steps-wrapper">
+            <div class="steps-item">
+              <img src="img/steps/calendar.png" alt="Оплата" class="steps-item__icon">
+              <h3 class="steps-item__title">Назначаем дату и время!</h3>
+              <!-- /.steps-item__title -->
+              <span class="steps-item__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+              <!-- /.steps-item__descr -->
+            </div>
+            <!-- /.steps-item -->
+            <div class="image-wrap image-wrap_curve-back">
+              <img src="img/steps/step-2.jpg" alt="Шаг 2" class="image-wrap__image">
+            </div>
+          </div>
+          <div class="steps-wrapper">
+            <div class="image-wrap">
+              <img src="img/steps/step-3.jpg" alt="Шаг 3" class="image-wrap__image">
+            </div>
+            <div class="steps-item">
+              <img src="img/steps/coffee-cup.png" alt="Оплата" class="steps-item__icon">
+              <h3 class="steps-item__title">Наливаем вкусный кофе!</h3>
+              <!-- /.steps-item__title -->
+              <span class="steps-item__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat.</span>
+              <!-- /.steps-item__descr -->
+            </div>
+            <!-- /.steps-item -->
+          </div>
+          <div class="steps-wrapper">
+            <div class="steps-item">
+              <img src="img/steps/rocket.png" alt="Оплата" class="steps-item__icon">
+              <h3 class="steps-item__title">Coffeenglish полный вперед!</h3>
+              <!-- /.steps-item__title -->
+              <span class="steps-item__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat.</span>
+              <!-- /.steps-item__descr -->
+            </div>
+            <!-- /.steps-item -->
+            <div class="image-wrap image-wrap_no-curve">
+              <img src="img/steps/step-4.jpg" alt="Шаг 4" class="image-wrap__image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="whyme">
+      <div class="container">
+        <div class="whyme-block">
+          <h2 class="whyme-block__title">Почему выбирают мою программу</h2>
+          <!-- /.whyme-block__title -->
+          <div class="whyme-wrapper">
+            <div class="whyme-item">
+              <img src="img/why/1-hour.png" alt="" class="whyme-item__image">
+              <span class="whyme-item__text">Только 1 час в день</span> 
+              <!-- /.whyme-item__text -->
+            </div>
+            <!-- /.whyme-item -->
+            <div class="whyme-item">
+              <img src="img/why/time-day.png" alt="" class="whyme-item__image">
+              <span class="whyme-item__text">В удобное для вас время и место</span> 
+              <!-- /.whyme-item__text -->
+            </div>
+            <!-- /.whyme-item -->
+            <div class="whyme-item">
+              <img src="img/why/client-oriented.png" alt="" class="whyme-item__image">
+              <span class="whyme-item__text">Персональный подход к клиенту</span> 
+              <!-- /.whyme-item__text -->
+            </div>
+            <!-- /.whyme-item -->
+            <div class="whyme-item">
+              <img src="img/why/online-edu.png" alt="" class="whyme-item__image">
+              <span class="whyme-item__text">Онлайн обучение и личные встречи</span> 
+              <!-- /.whyme-item__text -->
+            </div>
+            <!-- /.whyme-item -->
+            <div class="whyme-item">
+              <img src="img/why/flexible-payment.png" alt="" class="whyme-item__image">
+              <span class="whyme-item__text">Гибкая система оплаты</span> 
+              <!-- /.whyme-item__text -->
+            </div>
+            <!-- /.whyme-item -->
+            <div class="whyme-item">
+              <img src="img/why/conversations.png" alt="" class="whyme-item__image">
+              <span class="whyme-item__text">Интересное общение</span> 
+              <!-- /.whyme-item__text -->
+            </div>
+            <!-- /.whyme-item -->
+          </div>
+          <!-- /.whyme-wrapper -->
+        </div>
+        <!-- /.whyme-block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.whyme -->
   </main>
   
 </body>

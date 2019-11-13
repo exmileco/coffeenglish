@@ -1,0 +1,52 @@
+.whyme
+  &-block
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__title
+      margin-top: 11px
+      margin-bottom: 78px
+      color: #000000
+      font-size: 25px
+      font-weight: 700
+      display: block
+      // align-self: center
+      +roboto-bold
+  &-wrapper
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    &:last-item
+      margin-right: 0
+  &-item
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-right: 90px
+    // flex-basis: 10%
+    position: relative
+    &__image
+      max-width: 128px
+      // margin-bottom: 10px
+      // transform: scale(1, -1)
+      // padding-bottom: 0px
+      z-index: 2
+    &__text
+      display: block
+      color: #000000
+      width: 130px
+      height: 77px
+      text-align: center
+      font-size: 15px
+      font-weight: 400
+      background-image: url('../img/why/reflex.png') 
+      background-position: 50% 0%
+      background-repeat: no-repeat
+      padding-top: -20px
+      position: absolute
+      top: 172px
+      left: 0
+      z-index: 1
+      padding-top: 20px
+      +roboto-regular
