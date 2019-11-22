@@ -1,0 +1,198 @@
+.feedbacks
+  background-color: #ffffff
+  background-image: url('../img/feedbacks/bg-coriander.jpg'), url('../img/feedbacks/bg-coffeecup.png')
+  background-position: -2% 18%, 90% 34%
+  background-size: 33%, 23%
+  background-repeat: no-repeat, no-repeat
+  padding-top: 33px
+  padding-bottom: 90px
+  &-block
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  &__title
+    display: block
+    color: #000000
+    text-align: center
+    font-size: 25px
+    font-weight: 700
+    +roboto_bold
+  &-slider
+    width: 100%
+    max-width: 670px  
+    &__item
+      display: flex
+      justify-content: center
+      align-items: flex-start
+      margin: 90px 0
+  &-profile
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-right: 60px
+    color: #000000
+    +roboto_regular
+    &__image
+      width: 100px
+      border-radius: 50%
+      margin-bottom: 12px
+    &__name
+      display: block
+      margin-bottom: 8px
+    &__position
+      display: block
+  &-text
+    display: block
+    margin-top: 37px
+    margin-right: 33px
+    max-width: 390px
+    position: relative
+    &:before
+      display: block
+      content: ''
+      width: 31px
+      height: 37px
+      position: absolute
+      top: -40px
+      left: -40px
+      background: url(../img/feedbacks/coffeebean.png) no-repeat center 
+    &:after
+      display: block
+      content: ''
+      width: 31px
+      height: 37px
+      position: absolute
+      top: 75px
+      right: -26px
+      background: url(../img/feedbacks/coffeebean.png) no-repeat center
+
+  .slick-slide
+    display: flex
+
+@media screen and (max-width: 1200px)
+  .feedbacks
+    background-position: -2% 39%, 98% 45%
+    background-size: 30%, 20%
+    &-slider
+      max-width: 48vw
+    &-profile
+      margin-right: 47px
+      &__name
+        font-size: 0.9em
+      &__position
+        font-size: 0.9em
+    &-text
+      font-size: 0.9em 
+      &:before 
+        left: -33px
+      &:after
+        right: -33px
+    .slick
+      &-dots
+        bottom: 25px
+      &-prev
+        top: 319px
+        left: 169px
+        &:after
+          width: 171px
+          top: -8px
+          left: 17px
+      &-next
+        top: 319px
+        right: 104px
+        // bottom: 20px
+@media screen and (max-width: 991px)
+  .feedbacks
+    background-position: 0% 41%, 97% 43%
+    background-size: 26%, 21%
+    &__title
+      font-size: 18px
+    &-slider
+      max-width: 48vw
+    &-profile
+      margin-right: 47px
+      &__name
+        font-size: 0.7em
+      &__position
+        font-size: 0.7em
+    &-text
+      font-size: 0.7em 
+      &:before 
+        left: -33px
+      &:after
+        right: -33px
+    .slick
+      &-dots
+        bottom: 35px
+      &-prev
+        top: 300px
+        left: 130px
+        &:after
+          width: 26vw
+          top: -8px
+          left: 20px
+      &-next
+        top: 300px
+        right: 0px
+@media screen and (max-width: 768px)
+  .feedbacks
+    background-image: none
+    padding-bottom: 50px
+    &-slider
+      max-width: 90%
+      &__item
+        margin: 60px 0
+    .slick
+      &-prev
+        top: 246px
+        left: 5vw
+        &::after
+          width: 300px
+      &-next
+        top: 246px
+        right: 5vw
+@media screen and (max-width: 567px)
+  .feedbacks
+    &-profile
+      margin-right: 0
+    &-text
+      margin-top: 20px
+      margin-right: 0
+      &:before 
+        display: none
+      &:after
+        display: none
+    &-slider
+      max-width: 60%
+      &__item
+        margin-top: 40px
+        margin-bottom: 30px
+      &__item
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    .slick
+      &-dots
+        bottom: 0px
+        left: 0%
+      &-prev
+        top: 360px
+        left: 0px
+        &::after
+          width: 44vw
+      &-next
+        top: 360px
+        right: 0px
+@media screen and (max-width: 320px)
+  .feedbacks
+    &-slider
+      max-width: 90%
+    .slick
+      // &-dots
+      &-prev
+        top: 344px
+        &::after
+          width: 60vw
+      &-next
+        top: 344px

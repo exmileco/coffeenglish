@@ -39,11 +39,31 @@
 }
 
 @font-face {
+  font-family: 'Roboto - Thin Italic';
+  src: url('../fonts/roboto-thin-italic.eot');
+  src: url('../fonts/roboto-thin-italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/roboto-thin-italic.woff') format('woff'),
+    url('../fonts/roboto-thin-italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Roboto - Bold';
   src: url('../fonts/roboto-bold.eot');
   src: url('../fonts/roboto-bold.eot?#iefix') format('embedded-opentype'),
     url('../fonts/roboto-bold.woff') format('woff'),
     url('../fonts/roboto-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dom Casual Normal';
+  src: url('../fonts/domcasualnormal.eot');
+  src: url('../fonts/domcasualnormal.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/domcasualnormal.woff') format('woff'),
+    url('../fonts/domcasualnormal.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -72,8 +92,20 @@
   letter-spacing: 0px;
 }
 
+@mixin roboto_thin_italic {
+  font-family: 'Roboto - Thin Italic', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
 @mixin roboto_bold {
   font-family: 'Roboto - Bold', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+@mixin dom_casual_normal {
+  font-family: 'Dom Casual Normal', sans-serif;
   font-weight: 400;
   letter-spacing: 0px;
 }

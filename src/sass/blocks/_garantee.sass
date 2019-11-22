@@ -1,0 +1,63 @@
+.garantee
+  background: url(../img/garantee/bg-garantee.png) 50% 44% no-repeat
+  &__title
+    color: #000000
+    margin: auto
+    text-align: center
+    font-size: 20px
+    +roboto_bold
+  &-block
+    padding-top: 33px
+    padding-bottom: 48px
+    max-width: 1040px
+    margin: auto
+  &-wrapper
+    max-width: 1040px
+    margin: auto
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-top: 130px
+    height: 240px
+  &__item
+    display: flex
+    align-items: center
+    &:nth-child(2)
+      align-self: flex-end
+  &__icon
+    width: 65px
+    height: 65px
+    margin-right: 17px
+    // margin-left: 10px
+  &__text
+    max-width: 235px
+    color: #000000
+    font-size: 15px
+    +roboto_regular
+@media screen and (max-width: 1200px)
+  .garantee
+    background-size: 20%
+    &__title
+      font-size: 18px
+    &__text
+      font-size: 0.9em
+    &-wrapper
+      margin-top: 60px
+@media screen and (max-width: 991px)
+  .garantee
+    background: url(../img/garantee/bg-garantee.png) 50% 36% no-repeat
+    background-size: 20%
+    &__text
+      font-size: 0.7em
+@media screen and (max-width: 567px)
+  .garantee
+    background: none
+    &-wrapper
+      flex-direction: column
+      align-items: center
+      margin-top: 30px
+      max-width: 90%
+    &__item
+      &:nth-child(2)
+        align-self: center
+        

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,UAAU,CAAV,MAAU;EACR,IAAI;IACF,OAAO,EAAE,CAAC;;EAGZ,EAAE;IACA,OAAO,EAAE,CAAC;;;;AAId,AAAA,OAAO,CAAC;EACN,cAAc,EAAE,MAAM;CACvB",
+    "sources": [
+        "../sass/animate/fading_entrances/fadeIn.scss"
+    ],
+    "names": [],
+    "file": "fadeIn.css"
+}

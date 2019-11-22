@@ -1,0 +1,182 @@
+.experience
+  background-color: #3f2921
+  &-block
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    &__title
+      margin-top: 45px
+      margin-bottom: 71px
+      max-width: 504px
+      text-align: center
+      color: #ffffff
+      font-size: 25px
+      font-weight: 700
+      +roboto_bold
+.companies
+  &__subtitle
+    text-align: center
+    margin-bottom: 12px
+    color: #ffffff
+    font-size: 16px
+    font-weight: 500
+    +roboto_medium
+  &-wrapper
+    width: 100%
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+    // margin: auto
+    margin-bottom: 20px
+    &__item
+      max-width: 165px
+      // height: 110px
+      // margin: 0 25px 15px 25px
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-basis: 25%
+      filter: grayscale(100%)
+      margin: 20px 40px
+      transition: 0.3s
+      &:hover
+        filter: none
+        // border: 1px solid #bf9161
+    &__image
+      display: block
+      max-height: 110px 
+.students
+  margin: 34px 0
+  &__subtitle
+    text-align: center
+    margin-top: 14px
+    margin-bottom: 25px
+    color: #ffffff
+    font-size: 16px
+    font-weight: 500
+    +roboto_medium
+  &-wrapper
+    max-width: 100%
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+    margin: auto
+    &__item
+      max-width: 165px
+      height: 132px
+      // margin: 0 25px
+      display: flex
+      justify-content: center
+      align-items: center
+      filter: grayscale(100%)
+      margin: 20px 40px
+      flex-basis: 25%
+      transition: 0.3s
+      &:hover
+        filter: none
+        // border: 1px solid #bf9161
+    &__image
+      max-height: 110px 
+.statistics
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  padding-top: 33px
+  padding-bottom: 40px
+  max-width: 85%
+  border-top: 1px solid #724a3b
+  border-bottom: 1px solid #724a3b
+  &__item
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    // max-width: 215px
+    margin: 22px 0px
+    flex-basis: 33%
+    color: #ffffff
+    +dom_casual_normal
+    &:last-child
+      flex-direction: row
+      flex-basis: 100%
+      margin-top: 50px
+      // width: 472px
+  &__figure
+    display: block
+    font-size: 85px
+    line-height: 0.5
+    text-align: center
+    &:last-child
+      display: inline
+      position: relative
+      top: 20px
+      left: 0px
+  &__text
+    // display: block
+    font-size: 36px
+    text-align: center
+@media screen and (max-width: 1200px)
+  .statistics
+    &__item
+      &:last-child
+        margin-top: 30px
+    &__figure 
+      font-size: 70px
+      &:last-child
+        top: 13px
+    &__text
+      font-size: 30px 
+@media screen and (max-width: 991px)
+  .students
+    &-wrapper
+      &__item
+        margin: 20px 30px
+  .experience
+    &-block
+      &__title
+        font-size: 18px
+  .statistics
+    &__figure 
+      font-size: 60px
+    &__text
+      font-size: 25px 
+@media screen and (max-width: 768px)
+  .experience
+    &-block
+      &__title
+        font-size: 18px
+  .statistics
+    max-width: 100%
+    &__item
+      flex-basis: 50%
+    &__figure 
+      font-size: 45px
+    &__text
+      font-size: 18px 
+@media screen and (max-width: 567px)
+  .students
+    &-wrapper
+      &__item
+        flex-basis: 40%
+        margin: 20px 10px
+  .companies
+    &-wrapper
+      &__item
+        flex-basis: 40%
+        margin: 20px 10px
+  .statistics
+    max-width: 100%
+    &__item
+      flex-basis: 50%
+      &:last-child
+        flex-basis: 50%
+@media screen and (max-width: 320px)
+  .statistics
+    max-width: 100%
+    &__item
+      flex-basis: 100%
+      &:last-child
+        flex-basis: 100%

@@ -10,51 +10,60 @@
 <body>
   <header class="header">
     <div class="container">
+      <div class="menu-icon-wrapper">
+        <div class="menu-icon"></div>
+      </div>
       <div class="header-block">
-        <img src="img/header/logo.png" alt="Логотип" class="header__logo">
+        <a href="./"><img src="img/header/logo.png" alt="Логотип" class="header__logo"></a>
         <nav class="nav-block">
           <ul class="nav-menu">
-            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Главная</a></li>
-            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Почему именно я</a></li>
-            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Обучение</a></li>
-            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Кто добилcя успеха</a></li>
-            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Гарантия</a></li>
-            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Отзывы</a></li>
-            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Вопросы</a></li>
-            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Контакты</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#mainpage">Главная</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#steps">Обучение</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#whyme">Почему я</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#experience">Мои студенты</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#feedbacks">Отзывы</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#faq">Вопросы</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#garantee">Гарантия</a></li>
+            <li class="nav-menu__item"><a class="nav-menu__link" href="#footer">Контакты</a></li>
           </ul>
         </nav>
         <div class="header-contacts">
-          <button class="button header-contacts__button">Обратный звонок</button>
-          <a href="tel:+79259999999" class="header-contacts__phone">+7(925) 999-99-99</a>
+          <button class="button header-contacts__button" id="button">Обратный звонок</button>
+          <a href="tel:+77016677802" class="header-contacts__phone">+7(701) 667-78-02</a>
         </div>
       </div>
     </div>
   </header>
   <main>
-    <section class="hero">
+    <section class="hero" id="mainpage">
       <div class="container">
+        <div class="bg-block"></div>
         <div class="hero-block">
-          <h1 class="hero-block__title">Обучение английскому языку для людей у которых есть все, кроме английского</h1>
+          <h1 class="hero-block__title">Увлекательное обучение английскому языку</h1>
+          <h2 class="hero-block__subtitle">для людей у которых есть всё, кроме ежедневной практики языка.</h2>
           <ul class="hero-list">
             <li class="hero-list__item">Уделяйте всего 1 час в день</li>
             <li class="hero-list__item">Уже через 21 день Вы будете знать английский</li>
             <li class="hero-list__item">Занимайтесь в удобное для Вас время без привязки к локации</li>
           </ul>
-          <form action="#" class="hero-form">
+          <form action="mail.php" method="POST" class="hero-form" name="hero-form" id="hero-form">
             <span class="hero-form__title">Запишитесь на бесплатную консультацию:</span>
-            <input type="text" class="input hero-form__input" placeholder="Имя, Фамилия">
-            <input type="text" class="input hero-form__input" placeholder="Номер телефона">
-            <button class="button hero-form__button">Отправить</button>
+            <div class="input-group">
+              <input type="text" name="hero_username" class="input hero-form__input" autocomplete="off" placeholder="Ваше Имя">
+            </div>
+            <div class="input-group">
+              <input type="tel" name="hero_phone" class="input hero-form__input phone" autocomplete="off" placeholder="Ваш телефон">
+            </div>
+            <button class="button hero-form__button" id="hero-button">Отправить</button>
           </form>
         </div>
       </div>
     </section>
-    <section class="steps">
+    <section class="steps" id="steps">
       <div class="container">
         <div class="steps-block">
           <h2 class="steps-block__title">Как проходит обучение</h2>
-          <div class="steps-wrapper">
+          <div class="steps-wrapper wow fadeIn" data-wow-delay="1s">
             <div class="image-wrap">
               <img src="img/steps/step-1.jpg" alt="Шаг 1" class="image-wrap__image">
             </div>
@@ -62,26 +71,27 @@
               <img src="img/steps/money.png" alt="Оплата" class="steps-item__icon">
               <h3 class="steps-item__title">Оплачиваете курс!</h3>
               <!-- /.steps-item__title -->
-              <span class="steps-item__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+              <span class="steps-item__descr">Ура! Вы приняли решение пройти курс. Следующий этап вы делаете онлайн оплату в любой валюте и отправляете чек по почте.</span>
               <!-- /.steps-item__descr -->
             </div>
             <!-- /.steps-item -->
           </div>
           <!-- <div class="steps-block__curve"></div> -->
-          <div class="steps-wrapper">
+          <div class="steps-wrapper wow fadeIn" data-wow-delay="1.1s">
+            <div class="image-wrap image-wrap_curve-back">
+              <img src="img/steps/step-2.jpg" alt="Шаг 2" class="image-wrap__image">
+            </div>
+
             <div class="steps-item">
               <img src="img/steps/calendar.png" alt="Оплата" class="steps-item__icon">
               <h3 class="steps-item__title">Назначаем дату и время!</h3>
               <!-- /.steps-item__title -->
-              <span class="steps-item__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+              <span class="steps-item__descr">Вы можете начать программу в самый лучший день, договоритесь со мной в какие дни вы готовы обучаться и в какое время, для меня важно ваше решение и готовность.</span>
               <!-- /.steps-item__descr -->
             </div>
             <!-- /.steps-item -->
-            <div class="image-wrap image-wrap_curve-back">
-              <img src="img/steps/step-2.jpg" alt="Шаг 2" class="image-wrap__image">
-            </div>
           </div>
-          <div class="steps-wrapper">
+          <div class="steps-wrapper wow fadeIn" data-wow-delay="1.3s">
             <div class="image-wrap">
               <img src="img/steps/step-3.jpg" alt="Шаг 3" class="image-wrap__image">
             </div>
@@ -89,69 +99,71 @@
               <img src="img/steps/coffee-cup.png" alt="Оплата" class="steps-item__icon">
               <h3 class="steps-item__title">Наливаем вкусный кофе!</h3>
               <!-- /.steps-item__title -->
-              <span class="steps-item__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                ut aliquip ex ea commodo consequat.</span>
+              <span class="steps-item__descr">Что придаёт нам бодрости и помогает зарядиться энергией безусловно это кофе. Кофейный аромат способен улучшить
+              настроение и часто хватает одного запаха кофе для того, чтобы получить прилив энергии и улучшить своё настроение. Drink
+              coffee and speak English девиз моей программы.</span>
               <!-- /.steps-item__descr -->
             </div>
             <!-- /.steps-item -->
           </div>
-          <div class="steps-wrapper">
+          <div class="steps-wrapper wow fadeIn" data-wow-delay="1.4s">
+            <div class="image-wrap">
+              <img src="img/steps/step-4.jpg" alt="Шаг 4" class="image-wrap__image">
+            </div>
             <div class="steps-item">
               <img src="img/steps/rocket.png" alt="Оплата" class="steps-item__icon">
               <h3 class="steps-item__title">Coffeenglish полный вперед!</h3>
               <!-- /.steps-item__title -->
-              <span class="steps-item__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                ut aliquip ex ea commodo consequat.</span>
+              <span class="steps-item__descr">Вы не только улучшите ваши языковые навыки и подтяните ваш уровень, вы также получите личностный рост, супер лайфхак
+              самостоятельно изучать другие иностранные языки, вы станете более уверенными и свободными.</span>
               <!-- /.steps-item__descr -->
             </div>
             <!-- /.steps-item -->
-            <div class="image-wrap image-wrap_no-curve">
-              <img src="img/steps/step-4.jpg" alt="Шаг 4" class="image-wrap__image">
-            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="whyme">
+    <section class="whyme" id="whyme">
       <div class="container">
         <div class="whyme-block">
           <h2 class="whyme-block__title">Почему выбирают мою программу</h2>
           <!-- /.whyme-block__title -->
           <div class="whyme-wrapper">
-            <div class="whyme-item">
-              <img src="img/why/1-hour.png" alt="" class="whyme-item__image">
+            <div class="whyme-item wow fadeInDown" data-wow-delay="1s">
+              <div class="whyme-item-img"><img src="img/why/1hour.png" alt="" class="whyme-item-img__image"></div>
               <span class="whyme-item__text">Только 1 час в день</span> 
               <!-- /.whyme-item__text -->
             </div>
             <!-- /.whyme-item -->
-            <div class="whyme-item">
-              <img src="img/why/time-day.png" alt="" class="whyme-item__image">
+            <div class="whyme-item wow fadeInDown" data-wow-delay="1.2s">
+              <div class="whyme-item-img"><img src="img/why/time-day.png" alt="" class="whyme-item-img__image"></div>
               <span class="whyme-item__text">В удобное для вас время и место</span> 
               <!-- /.whyme-item__text -->
             </div>
             <!-- /.whyme-item -->
-            <div class="whyme-item">
-              <img src="img/why/client-oriented.png" alt="" class="whyme-item__image">
+            <div class="whyme-item wow fadeInDown" data-wow-delay="1.4s">
+              <div class="whyme-item-img"><img src="img/why/client-oriented.png" alt="" class="whyme-item-img__image"></div>
               <span class="whyme-item__text">Персональный подход к клиенту</span> 
               <!-- /.whyme-item__text -->
             </div>
             <!-- /.whyme-item -->
-            <div class="whyme-item">
-              <img src="img/why/online-edu.png" alt="" class="whyme-item__image">
+            <div class="whyme-item wow fadeInDown" data-wow-delay="1.6s">
+              <div class="whyme-item-img"><img src="img/why/online-edu.png" alt="" class="whyme-item-img__image"></div>
+              
               <span class="whyme-item__text">Онлайн обучение и личные встречи</span> 
               <!-- /.whyme-item__text -->
             </div>
             <!-- /.whyme-item -->
-            <div class="whyme-item">
-              <img src="img/why/flexible-payment.png" alt="" class="whyme-item__image">
+            <div class="whyme-item wow fadeInDown" data-wow-delay="1.8s">
+              <div class="whyme-item-img"><img src="img/why/flexible-payment.png" alt="" class="whyme-item-img__image"></div>
+              
               <span class="whyme-item__text">Гибкая система оплаты</span> 
               <!-- /.whyme-item__text -->
             </div>
             <!-- /.whyme-item -->
-            <div class="whyme-item">
-              <img src="img/why/conversations.png" alt="" class="whyme-item__image">
+            <div class="whyme-item wow fadeInDown" data-wow-delay="2s">
+              <div class="whyme-item-img"><img src="img/why/conversations.png" alt="" class="whyme-item-img__image"></div>
+              
               <span class="whyme-item__text">Интересное общение</span> 
               <!-- /.whyme-item__text -->
             </div>
@@ -164,7 +176,408 @@
       <!-- /.container -->
     </section>
     <!-- /.whyme -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="experience-block">
+          <h2 class="experience-block__title">Кто уже выбрал для себя мою программу и добился успеха</h2>
+          <!-- /.experience-block__title -->
+          <div class="companies">
+            <h3 class="companies__subtitle">Сотрудничество с компаниями</h3>
+            <!-- /.companies__subtitle -->
+            <div class="companies-wrapper">
+              <div class="companies-wrapper__item">
+                <img src="img/experience/bi-group.svg" alt="BI Group" class="companies-wrapper__image">
+              </div>
+              <!-- /.companies-wrapper__item -->
+              <div class="companies-wrapper__item">
+                <img src="img/experience/atf-bank.png" alt="ATF Bank" class="companies-wrapper__image">
+              </div>
+              <!-- /.companies-wrapper__item -->
+              <div class="companies-wrapper__item">
+                <img src="img/experience/altynbank.png" alt="Алтын Банк" class="companies-wrapper__image">
+              </div>
+              <!-- /.companies-wrapper__item -->
+              <div class="companies-wrapper__item">
+                <img src="img/experience/kaz-munai-gas.png" alt="КазМунайГаз" class="companies-wrapper__image">
+              </div>
+              <!-- /.companies-wrapper__item -->
+              <div class="companies-wrapper__item">
+                <img src="img/experience/russian-radio.png" alt="Русское Радио" class="companies-wrapper__image">
+              </div>
+              <!-- /.companies-wrapper__item -->
+              <div class="companies-wrapper__item">
+                <img src="img/experience/ki-eye-deseases.png" alt="НИИ Глазных Болезней" class="companies-wrapper__image">
+              </div>
+              <!-- /.companies-wrapper__item -->
+              <div class="companies-wrapper__item">
+                <img src="img/experience/forbes.svg" alt="Forbes" class="companies-wrapper__image">
+              </div>
+              <!-- /.companies-wrapper__item -->
+              <div class="companies-wrapper__item">
+                <img src="img/experience/kcell.png" alt="Kcell" class="companies-wrapper__image">
+              </div>
+              <!-- /.companies-wrapper__item -->
+            </div>
+            <!-- /.companies-wrapper -->
+          </div>
+          <!-- /.companies -->
+          <div class="statistics">
+            <div class="statistics__item">
+              <span class="statistics__figure">10</span> 
+              <!-- /.statistics__figure -->
+              <span class="statistics__text">Стаж работы(лет)</span> 
+              <!-- /.statistics__text -->
+            </div>
+            <!-- /.statistics__item -->
+            <div class="statistics__item">
+              <span class="statistics__figure">42825</span> 
+              <!-- /.statistics__figure -->
+              <span class="statistics__text">Часов обучения</span> 
+              <!-- /.statistics__text -->
+            </div>
+            <!-- /.statistics__item -->
+            <div class="statistics__item">
+              <span class="statistics__figure">2011</span> 
+              <!-- /.statistics__figure -->
+              <span class="statistics__text">Обучено студентов</span> 
+              <!-- /.statistics__text -->
+            </div>
+            <!-- /.statistics__item -->
+            <div class="statistics__item">
+              <span class="statistics__figure">34</span> 
+              <!-- /.statistics__figure -->
+              <span class="statistics__text">Компаний</span> 
+              <!-- /.statistics__text -->
+            </div>
+            <!-- /.statistics__item -->
+            <div class="statistics__item">
+              <span class="statistics__figure">1825</span> 
+              <!-- /.statistics__figure -->
+              <span class="statistics__text">Консультаций</span> 
+              <!-- /.statistics__text -->
+            </div>
+            <!-- /.statistics__item -->
+            <div class="statistics__item">
+              <span class="statistics__figure">51</span> 
+              <!-- /.statistics__figure -->
+              <span class="statistics__text">Мастер классов</span> 
+              <!-- /.statistics__text -->
+            </div>
+            <!-- /.statistics__item -->
+            <div class="statistics__item">
+              <span class="statistics__text">Обучение людей более чем из  
+                <span class="statistics__figure">14</span>
+                <!-- /.statistics__figure -->
+                стран</span> 
+              <!-- /.statistics__text -->
+            </div>
+            <!-- /.statistics__item -->
+          </div>
+          <!-- /.statistics -->
+          <div class="students">
+            <h3 class="students__subtitle">Студенты поступили в школы и университеты</h3>
+            <!-- /.students__subtitle -->
+            <div class="students-wrapper">
+              <div class="students-wrapper__item">
+                <img src="img/experience/nazarbayev-university.png" alt="" class="students-wrapper__image">
+              </div>
+              <!-- /.students-wrapper__item -->
+              <div class="students-wrapper__item">
+                <img src="img/experience/haileybury.png" alt="" class="students-wrapper__image">
+              </div>
+              <!-- /.students-wrapper__item -->
+              <div class="students-wrapper__item">
+                <img src="img/experience/university-greenwich.png" alt="" class="students-wrapper__image">
+              </div>
+              <!-- /.students-wrapper__item -->
+              <div class="students-wrapper__item">
+                <img src="img/experience/unversity-glasgow.png" alt="" class="students-wrapper__image">
+              </div>
+              <!-- /.students-wrapper__item -->
+              <div class="students-wrapper__item">
+                <img src="img/experience/london-business-school.png" alt="" class="students-wrapper__image">
+              </div>
+              <!-- /.students-wrapper__item -->
+              <div class="students-wrapper__item">
+                <img src="img/experience/aud.png" alt="" class="students-wrapper__image">
+              </div>
+              <!-- /.students-wrapper__item -->
+              <div class="students-wrapper__item">
+                <img src="img/experience/university-edinburgh.png" alt="" class="students-wrapper__image">
+              </div>
+              <!-- /.students-wrapper__item -->
+              <div class="students-wrapper__item">
+                <img src="img/experience/mit.png" alt="" class="students-wrapper__image">
+              </div>
+              <!-- /.students-wrapper__item -->
+            </div>
+            <!-- /.students-wrapper -->
+          </div>
+          <!-- /.students -->
+        </div>
+        <!-- /.experience-block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.experience -->
+    <section class="feedbacks wow fadeIn" data-wow-delay="1.3s id="feedbacks">
+      <div class="container">
+        <div class="feedbacks-block">
+          <h2 class="feedbacks__title">Что говорят обо мне</h2>
+          <div class="feedbacks-slider">
+            <div class="feedbacks-slider__item">
+              <div class="feedbacks-profile">
+                <img src="img/feedbacks/dilya_kurbanova.jpg" alt="" class="feedbacks-profile__image">
+                <span class="feedbacks-profile__name">Диля К.</span>
+                <!-- /.feedbacks-profile__name -->
+                <span class="feedbacks-profile__position">Журналист</span>
+                <!-- /.feedbacks-profile__position -->
+              </div>
+              <!-- /.feedbacks-profile -->
+              <span class="feedbacks-text">Каждая наша встреча это приятное общение, море позитива, доброжелательности! Нельзя не
+                отметить, её легкую подачу языка, как в грамматике, так и в разговорной речи, а самое главное её индивидуальный
+                подход. Мои самые положительные рекомендации.</span>
+              <!-- /.feedbacks-text -->
+            </div>
+            <!-- /.feedbacks-slider__item -->
+            <div class="feedbacks-slider__item">
+              <div class="feedbacks-profile">
+                <img src="img/feedbacks/balzhan_bekbolat.jpg" alt="" class="feedbacks-profile__image">
+                <span class="feedbacks-profile__name">Балжан Б.</span>
+                <!-- /.feedbacks-profile__name -->
+                <span class="feedbacks-profile__position">Кондитер</span>
+                <!-- /.feedbacks-profile__position -->
+              </div>
+              <!-- /.feedbacks-profile -->
+              <span class="feedbacks-text">Динара со своей бешенной энергетикой заряжает бегать девочек далеко за пределы
+                Казахстана. Так же легко она обучает английскому языку, просто за чашкой вкусного кофе и за красивой веселой
+                беседой. С ней вообще все легко получается и дружить и общаться.</span>
+              <!-- /.feedbacks-text -->
+            </div>
+            <!-- /.feedbacks-slider__item -->
+            <div class="feedbacks-slider__item">
+              <div class="feedbacks-profile">
+                <img src="img/feedbacks/indira_kaidarova.jpg" alt="" class="feedbacks-profile__image">
+                <span class="feedbacks-profile__name">Индира К.</span>
+                <!-- /.feedbacks-profile__name -->
+                <span class="feedbacks-profile__position">Домохозяйка</span>
+                <!-- /.feedbacks-profile__position -->
+              </div>
+              <!-- /.feedbacks-profile -->
+              <span class="feedbacks-text">Пару дней как я прохожу онлайн обучение английского языка с Динарой, чему очень рада. У нее уникальная и интересная форма обучения, в непринужденной и комфортной обстановке.</span>
+              <!-- /.feedbacks-text -->
+            </div>
+            <!-- /.feedbacks-slider__item -->
+            <div class="feedbacks-slider__item">
+              <div class="feedbacks-profile">
+                <img src="img/feedbacks/linadastem.jpg" alt="" class="feedbacks-profile__image">
+                <span class="feedbacks-profile__name">Лина Д.</span>
+                <!-- /.feedbacks-profile__name -->
+                <span class="feedbacks-profile__position">Директор</span>
+                <!-- /.feedbacks-profile__position -->
+              </div>
+              <!-- /.feedbacks-profile -->
+              <span class="feedbacks-text">Люблю тебя за дружбу, и за то что разбудила во мне эту любовь к языку, хотя всегда считала, что это вообще не достижимо!!! Ты лучшая!!!!</span>
+              <!-- /.feedbacks-text -->
+            </div>
+            <!-- /.feedbacks-slider__item -->
+          </div>
+          <!-- /.feedbacks-slider -->
+        </div>
+        <!-- /.feedbacks-block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.feedbacks -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="faq-block">
+          <h2 class="faq__title">Остались вопросы?</h2>
+          <!-- /.faq__title -->
+          <div class="faq-wrapper">
+            <div class="faq-wrapper__question-block">
+              <span class="faq-wrapper__question">Английский за 21 день? Это невозможно!</span>
+              <span class="faq-wrapper__arrow">&#62;</span>
+            </div>
+            <!-- /.faq-wrapper__question -->
+            <span class="faq-wrapper__answer">Я есть коуч английского языка который устраняет языковой барьер за 21 день. Я за то, чтобы вы начали говорить со мной уже на первой встрече. Потому что вопросы, которые я задаю вам требуют немедленного ответа, независимо от того, на каком уровне ваш английский.</span> 
+            <!-- /.faq-wrapper__answer -->
+          </div>
+          <!-- /.faq-wrapper -->
+          <div class="faq-wrapper">
+            <div class="faq-wrapper__question-block">
+              <span class="faq-wrapper__question">Я не уверен, что у меня получится.</span> 
+              <span class="faq-wrapper__arrow">&#62;</span>
+            </div>
+            <!-- /.faq-wrapper__question -->
+            <span class="faq-wrapper__answer">Каждый урок это уникальная встреча в кофейнях, поход в горы, посещение культурных центров, совместный просмотр фильмов и
+            медитация в начале занятия, чтобы настроить вас на позитив и продуктивное обучение. Я поведу вас сквозь весь курс и он
+            превратиться для вас в легкое и интересное приключение.</span> 
+            <!-- /.faq-wrapper__answer -->
+          </div>
+          <!-- /.faq-wrapper -->
+          <div class="faq-wrapper">
+            <div class="faq-wrapper__question-block">
+              <span class="faq-wrapper__question">У меня нет способностей к языкам. Мне это трудно дается.</span> 
+              <span class="faq-wrapper__arrow">&#62;</span>
+            </div>
+            <!-- /.faq-wrapper__question -->
+            <span class="faq-wrapper__answer">Я учитываю ваши цели, характер, сферу деятельности, вкусы и предпочтения, интересы и увлечения. Всегда есть обратная
+            связь даже после окончания курса. Помимо, ежедневного общения мы успеваем ещё вести активную переписку в течении дня,
+            практика и применение новых слов закрепят ваше знание. Мы станем друзьями!</span> 
+            <!-- /.faq-wrapper__answer -->
+          </div>
+          <!-- /.faq-wrapper -->
+          <div class="faq-wrapper">
+            <div class="faq-wrapper__question-block">
+              <span class="faq-wrapper__question">У меня плохая память, смогу ли я все запомнить?</span>
+              <span class="faq-wrapper__arrow">&#62;</span>
+            </div>
+            <!-- /.faq-wrapper__question -->
+            <span class="faq-wrapper__answer">Чтобы запомнить новые слова и выражение, вам не нужно их зубрить. Я покажу вам технику где слова навсегда останутся в вашей памяти без труда, опять же эмоциональная связка и ассоциативное мышление.</span>
+            <!-- /.faq-wrapper__answer -->
+          </div>
+          <!-- /.faq-wrapper -->
+          <div class="faq-wrapper">
+            <div class="faq-wrapper__question-block">
+              <span class="faq-wrapper__question">У меня много работы и нет времени, успею ли я?</span>
+              <span class="faq-wrapper__arrow">&#62;</span>
+            </div>
+            <!-- /.faq-wrapper__question -->
+            <span class="faq-wrapper__answer">Дистанционное обучение доступно из любого уголка мира. В удобное для вас
+              время. Онлайн занятия проходят в режиме LIVE видео, практикуйте английский не выходя из дома и офиса. Вы будете
+              получать все необходимые материалы и ресурсы для лучшего результата.</span>
+            <!-- /.faq-wrapper__answer -->
+          </div>
+          <!-- /.faq-wrapper -->
+          <div class="faq-wrapper">
+            <div class="faq-wrapper__question-block">
+              <span class="faq-wrapper__question">Для меня это дорого.</span>
+              <span class="faq-wrapper__arrow">&#62;</span>
+            </div>
+            <!-- /.faq-wrapper__question -->
+            <span class="faq-wrapper__answer">У меня гибкая система оплаты. Можно подобрать тот способ оплаты, что
+              подойдет именно для Вас: частичная, за каждый урок, на карту или наличными.</span>
+            <!-- /.faq-wrapper__answer -->
+          </div>
+          <!-- /.faq-wrapper -->
+        </div>
+        <!-- /.faq-block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.faq -->
+    <section class="garantee" id="garantee">
+      <div class="container">
+        <div class="garantee-block">
+          <h2 class="garantee__title">Гарантия возврата</h2>
+          <!-- /.garantee__title -->
+          <div class="garantee-wrapper">
+            <div class="garantee__item wow bounceInRight" data-wow-delay="1.3s">
+              <img src="img/garantee/book.png" alt="Книга" class="garantee__icon">
+              <span class="garantee__text">Вам сложно следовать моим инструкциям в виду трудности понимания</span>
+              <!-- /.garantee__text -->
+            </div>
+            <!-- /.garantee__item -->
+            <div class="garantee__item wow bounceInRight" data-wow-delay="1.6s">
+              <img src="img/garantee/growth.png" alt="Рост" class="garantee__icon">
+              <span class="garantee__text">Вам тяжело дается коучинг и вы психологически не готовы к изменениям</span>
+              <!-- /.garantee__text -->
+            </div>
+            <!-- /.garantee__item -->
+            <div class="garantee__item wow bounceInRight" data-wow-delay="1.9s">
+              <img src="img/garantee/list.png" alt="Список" class="garantee__icon">
+              <span class="garantee__text">Вам трудно выполнить задания и вы не получаете результат ввиду сложности самих заданий</span>
+              <!-- /.garantee__text -->
+            </div>
+            <!-- /.garantee__item -->
+          </div>
+          <!-- /.garantee-wrapper -->
+        </div>
+        <!-- /.garantee-block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.garantee -->
   </main>
-  
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-block">
+        <div class="contacts">
+          <h3 class="contacts__title">Контакты</h3>
+          <div class="contacts-phone">
+            <img src="img/footer/phone-receiver.png" alt="Трубка телефона" class="contacts-phone__icon">
+            <a href="tel:+77016677802" class="contacts-phone__number">+7(701) 667-78-02</a>
+          </div>
+          <div class="contacts-email">
+            <img src="img/footer/email.png" alt="Вебсайта" class="contacts-email__icon">
+            <a href="mailto:bigcup@coffeenglish.com" class="contacts-email__address">bigcup@coffeenglish.com</a>
+          </div>
+          <div class="contacts-socials">
+            <a href="#" class="socials__link"><img src="img/footer/vk.png" alt="Вконтакте" class="contacts-socials__icon"></a>
+            <a href="#" class="socials__link"><img src="img/footer/odnoklassniki.png" alt="Одноклассники"
+                class="contacts-socials__icon"></a>
+            <a href="https://www.facebook.com/dinara.shayakhmetova" class="socials__link"><img
+                src="img/footer/facebook-f.png" alt="Facebook" class="contacts-socials__icon"></a>
+            <a href="https://www.instagram.com/drinkcoffee_speakenglish/" class="socials__link"><img
+                src="img/footer/instagram.png" alt="Instagram" class="contacts-socials__icon"></a>
+          </div>
+          <button class="button contacts__button" id="footer_button">Получить консультацию</button>
+        </div>
+        <!-- /.contacts -->
+        <div class="map" id="map"></div>
+        <!-- <div class="location">
+          <img src="img/footer/map.png" alt="" class="location__map">
+        </div> -->
+        <!-- /.location -->
+        <div class="copywrites">
+          <span class="copywrites__companyname">© 2019 CoffeEnglish</span>
+          <a href="privacy_policy.html" class="copywrites__policy">Политика конфидециальности</a>
+          <!-- <span class="copywrites__policy"></span> -->
+          <a href="termsofuse.html" class="copywrites__agreement">Пользовательское соглашение</a>
+          <!-- <span class="copywrites__agreement"></span> -->
+        </div>
+        <!-- /.copywrites -->
+      </div>
+      <!-- /.footer-block -->
+    </div>
+    <!-- /.container -->
+  </footer>
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+      <h4 class="modal-dialog__title">Запишитесь на бесплатную консультацию!</h4>
+      <span class="modal-dialog__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+      <form action="mail.php" method="POST" class="form form__modalPadding" id="modal-form">
+        <div class="input-group">
+          <input type="text" autocomplete="off" name="modal_username" class="input form__input" placeholder="Ваше имя">
+        </div>
+        <div class="input-group">
+          <input type="tel" autocomplete="off" name="modal_phone" class="input form__input phone"
+            placeholder="Ваш телефон">
+        </div>
+        <button class="button form__button">Позвоните мне!</button>
+      </form>
+      <span class="modal-dialog__subtitle2">или Вы можете перезвонить нам сами<br> по телефону:</span>
+      <a href="tel:+77016677802" class="modal-dialog__phone">+7(701) 667-78-02</a>
+      <button class="modal-dialog__close" id="close">&times;</button>
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <div class="submodal" id="submodal">
+    <div class="submodal-thankyou">
+      <h4 class="submodal-thankyou__title">Спасибо за заявку, скоро мы вам перезвоним.</h4>
+      <button class="submodal-thankyou__close" id="close-thanks">&times;</button>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+  <script src="js/jquery.spincrement.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

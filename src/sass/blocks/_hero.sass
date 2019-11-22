@@ -1,3 +1,15 @@
+.bg-block
+  position: absolute
+  width: 54vw
+  height: 529px
+  top: 0
+  left: 41vw
+  background-image: url('../img/header/bg-picture.png') 
+  background-size: 40vw
+  // background-position: 47vw 0%
+  background-repeat: no-repeat
+  // z-index: 2
+
 .hero
   // background-image: url('../img/hero/hero-bg-1170.jpg') 
   // background-position: 50% 50%
@@ -11,34 +23,43 @@
     align-items: flex-start
     color: #000000
     margin-bottom: 20px
+    max-width: 579px
     &__title
-      margin-top: 60px
-      max-width: 511px
-      +roboto-medium
+      margin-top: 48px
+      margin-bottom: 5px
+      max-width: 540px
+      +roboto_medium
       font-size: 25px
+    &__subtitle
+      margin-bottom: 10px
+      +roboto_medium
+      font-size: 20px
+      max-width: 511px
   &-list
-    margin-top: 33px
+    margin-top: 13px
     &__item
       list-style: none
-      margin-top: 15px
+      margin-bottom: 12px
   &-form
     display: flex
-    max-width: 579px
+    // max-width: 579px
     flex-wrap: wrap
     align-items: center
-    margin-top: 58px
+    margin-top: 39px
     margin-bottom: 68px
     &__title
       display: block
       flex-basis: 100%
-      margin-bottom: 24px
-      +roboto-regular
+      margin-bottom: 19px
+      +roboto_regular
     &__input
-      flex-basis: 20%
+      padding: 5px
+      // flex-basis: 20%
       margin-right: 14px
-      max-width: 203px
+      width: 204px
     &__button
-      flex-basis: 20%
+      // flex-basis: 20%
+      padding: 7px 35px
       max-width: 145px
       font-size: 14px
       color: #ffffff
@@ -46,3 +67,96 @@
       &:hover
         cursor: pointer
         background-color: #0068f1
+@media screen and (max-width: 1600px)
+  .bg-block
+    right: 0vw
+    background-size: 45vw
+@media screen and (max-width: 1600px)
+  .bg-block
+    right: 0vw
+    background-size: 50vw
+@media screen and (max-width: 1200px)
+  .bg-block
+    background-size: 56vw
+    // background-position: 40vw 0%
+  .hero
+    &-block
+      &__title
+        max-width: 520px
+        font-size: 22px
+      &__subtitle
+        font-size: 18px
+    &-list
+      &__item
+        font-size: 0.9em
+    &-form
+      &__title
+        font-size: 0.9em
+      &__input
+        width: 180px
+      &__button
+        padding: 7px 28px
+@media screen and (max-width: 991px)
+  .bg-block
+    background-size: 57vw
+  .hero
+    &-block
+      max-width: 390px
+      &__title
+        // max-width: 400px
+        margin-top: 0
+        font-size: 20px
+      &__subtitle
+        font-size: 16px
+    &-list
+      margin-top: 0
+      &__item
+        font-size: 0.9em
+    &-form
+      margin-top: 10px
+      margin-bottom: 40px
+      &__title
+        font-size: 0.9em
+      &__input
+        width: 180px
+        flex-basis: 70%
+        margin-bottom: 10px
+      &__button
+        margin-top: 5px
+        padding: 7px 28px
+        flex-basis: 100%
+@media screen and (max-width: 768px)
+  .bg-block
+    width: 100%
+    background-size: 80%
+    left: 0vw
+  .hero
+    &-block
+      max-width: 80%
+      margin: 0 auto
+      padding-top: 50vw
+@media screen and (max-width: 567px)
+  .bg-block
+    background-size: 80%
+    left: 0vw
+    top: 29px
+  .hero
+    &-block
+      max-width: 100%
+      padding-top: 50vw
+    &-form
+      &__input
+    //     margin: 5px auto
+        flex-basis: 100%
+      &__button
+        flex-basis: 100%
+    //     margin: 10px auto
+@media screen and (max-width: 320px)
+  .hero
+    &-form
+      &__input
+        margin: 5px auto
+        flex-basis: 100%
+        margin-right: 0
+      &__button
+        margin: 10px auto

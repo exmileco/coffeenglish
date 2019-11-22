@@ -1,0 +1,88 @@
+body
+  // background-image: none
+  // color: #000000
+// ol 
+//   list-style-type: none
+//   counter-reset: item
+//   margin: 0
+//   padding: 0
+//   color: #000
+//   margin-top: 10px
+//   font-size: 1em
+// ol>li
+//   display: table
+//   counter-increment: item
+//   margin-bottom: 0.6em
+// ol>li:before
+//   content: counters(item, ".") "."
+//   // display: table-cell
+//   // padding-right: 0.6em
+// li ol>li
+//   margin: 0
+// li ol>li:before
+//   content: counters(item, ".") " "
+
+.termsofuse
+  &-block
+    margin: 40px auto    
+    max-width: 90% 
+  &__title
+    +roboto_medium
+    font-size: 25px
+    color: #000
+  &__subtitle
+    margin: 10px 0
+    +roboto-medium
+    font-size: 20px
+    color: #000000
+    // max-width: 511px
+  &__text
+    margin-top: 10px
+    color: #000000
+  &__list
+    list-style-position: inside
+    margin-bottom: 5px
+@media screen and (max-width: 1200px)
+  .termsofuse
+    &-block
+      margin: 40px auto    
+      max-width: 90% 
+    &__title
+      +roboto_medium
+      font-size: 22px
+    &__subtitle
+      margin: 10px 0
+      +roboto-medium
+      font-size: 18px
+      // max-width: 511px
+    &__text
+      margin-top: 10px
+      font-size: 0.9em
+    &__list
+      list-style-position: inside
+      margin-bottom: 5px
+      font-size: 0.9em
+@media screen and (max-width: 991px)
+  .termsofuse
+    &-block
+      margin: 40px auto    
+      max-width: 100% 
+    &__title
+      +roboto_medium
+      font-size: 20px
+    &__subtitle
+      margin: 10px 0
+      +roboto-medium
+      font-size: 16px
+      // max-width: 511px
+    &__text
+      margin-top: 10px
+      font-size: 0.9em
+    &__list
+      list-style-position: inside
+      margin-bottom: 5px
+      font-size: 0.9em
+@media screen and (max-width: 567px)
+  .termsofuse
+    &-block
+      margin: 20px auto  

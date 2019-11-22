@@ -3,50 +3,84 @@
     display: flex
     flex-direction: column
     align-items: center
+    margin-top: 8px
+    margin-bottom: 20px
     &__title
+      text-align: center
       margin-top: 11px
       margin-bottom: 78px
       color: #000000
       font-size: 25px
       font-weight: 700
       display: block
-      // align-self: center
-      +roboto-bold
+      +roboto_bold
   &-wrapper
+    width: 100%
     display: flex
     flex-direction: row
     justify-content: space-between
     align-items: center
-    &:last-item
-      margin-right: 0
+    flex-wrap: wrap
   &-item
     display: flex
     flex-direction: column
     align-items: center
-    margin-right: 90px
-    // flex-basis: 10%
-    position: relative
-    &__image
+    &-img
+      position: relative
       max-width: 128px
-      // margin-bottom: 10px
-      // transform: scale(1, -1)
-      // padding-bottom: 0px
-      z-index: 2
+      &__image
+        z-index: 1
     &__text
       display: block
       color: #000000
-      width: 130px
-      height: 77px
+      max-width: 130px
       text-align: center
       font-size: 15px
       font-weight: 400
-      background-image: url('../img/why/reflex.png') 
-      background-position: 50% 0%
-      background-repeat: no-repeat
-      padding-top: -20px
-      position: absolute
-      top: 172px
-      left: 0
-      z-index: 1
-      padding-top: 20px
-      +roboto-regular
+      position: relative
+      z-index: 2
+      top: -35px
+      +roboto_regular
+      &::first-letter
+        color: #0071bb
+@media screen and (max-width: 1200px) 
+  .whyme
+    &-item
+      &-img
+        max-width: 120px
+      &__text
+        width: 130px
+        font-size: 0.9em
+        top: -26px
+@media screen and (max-width: 991px) 
+  .whyme
+    &-block
+      margin-bottom: 60px
+      &__title
+        font-size: 18px
+    &-item
+      &-img
+        max-width: 80px
+      &__text
+        width: 100px
+        font-size: 0.7em
+        top: -20px
+@media screen and (max-width: 768px) 
+  .whyme
+    &-block
+      margin-bottom: 50px
+      &__title
+        margin-bottom: 20px
+    &-item
+      flex-basis: 30%
+      &-img
+        padding-top: 20px
+@media screen and (max-width: 567px) 
+  .whyme
+    &-item
+      flex-basis: 50%
+@media screen and (max-width: 320px) 
+  .whyme
+    &-item
+      &-img
+        padding-top: 10px
