@@ -93,7 +93,7 @@ gulp.task('replace-mins', () => {
       .pipe(gulp.dest('dist'))
 });
 gulp.task('replace-custom-mins', () => {
-  return gulp.src('dist/map.html')
+  return gulp.src('dist/termsofuse.html')
     .pipe(replace('style.css', function (match, callback) {
       callback(null, 'style.min.css');
     }))

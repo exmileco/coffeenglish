@@ -4,17 +4,11 @@
   height: 529px
   top: 0
   left: 41vw
-  background-image: url('../img/header/bg-picture.png') 
+  background-image: url('../img/hero/bg-picture.png') 
   background-size: 40vw
-  // background-position: 47vw 0%
   background-repeat: no-repeat
-  // z-index: 2
-
+  z-index: -1
 .hero
-  // background-image: url('../img/hero/hero-bg-1170.jpg') 
-  // background-position: 50% 50%
-  // background-repeat: repeat-Y
-  // background-color: #F2F2F2
   box-shadow: 0px 11px 10px -7px #888888
   &-block
     display: flex
@@ -42,7 +36,6 @@
       margin-bottom: 12px
   &-form
     display: flex
-    // max-width: 579px
     flex-wrap: wrap
     align-items: center
     margin-top: 39px
@@ -54,11 +47,9 @@
       +roboto_regular
     &__input
       padding: 5px
-      // flex-basis: 20%
       margin-right: 14px
       width: 204px
     &__button
-      // flex-basis: 20%
       padding: 7px 35px
       max-width: 145px
       font-size: 14px
@@ -78,7 +69,6 @@
 @media screen and (max-width: 1200px)
   .bg-block
     background-size: 56vw
-    // background-position: 40vw 0%
   .hero
     &-block
       &__title
@@ -103,7 +93,6 @@
     &-block
       max-width: 390px
       &__title
-        // max-width: 400px
         margin-top: 0
         font-size: 20px
       &__subtitle
@@ -145,12 +134,7 @@
       max-width: 100%
       padding-top: 50vw
     &-form
-      &__input
-    //     margin: 5px auto
-        flex-basis: 100%
-      &__button
-        flex-basis: 100%
-    //     margin: 10px auto
+      justify-content: center
 @media screen and (max-width: 320px)
   .hero
     &-form

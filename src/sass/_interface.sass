@@ -3,13 +3,9 @@
   padding: 0 
   box-sizing: border-box 
 body 
-  // background-color: #ffffff
-  +roboto_light
+  +roboto_regular
   font-size: 16px
   color: $text-color
-  // background-image: url('../img/header/bg-picture.png') 
-  // background-position: 46vw 0%
-  // background-repeat: no-repeat
   background-color: #F2F2F2
 img 
   display: block 
@@ -29,7 +25,6 @@ img
 .input
   padding: 7px
   color: #000000  
-  // background-color: $text-color
   border: none
   border-radius: 2px 
   border: none
@@ -39,7 +34,6 @@ img
     outline: none !important
   &-group
     position: relative
-    // width: 100%
 span.invalid
   text-align: left
   position: absolute
@@ -50,20 +44,10 @@ span.invalid
   font-weight: 800
   width: 100%
 @media screen and (max-width: 1200px) 
-  // body
-  //   background-size: 59%
-  //   background-position: 40vw 0%
   .container 
     width: 760px 
     width: 90% 
-@media screen and (max-width: 991px) 
-  // body
-  //   background-size: 63%
-  //   background-position: 40vw 0%
 @media screen and (max-width: 768px) 
-  // body
-  //   background-size: 100%
-  //   background-position: 0% 0%
   .container 
     max-width: 580px 
     width: 90% 
@@ -73,8 +57,9 @@ span.invalid
     width: 95% 
   .input
     &-group
-      // width: 100%
-  //     margin: 0 auto
+      flex-basis: 100%
+      display: flex
+      justify-content: center
 @media screen and (max-width: 320px) 
   .container 
     max-width: 280px 

@@ -30,7 +30,8 @@
     display: flex
     flex-direction: column
     align-items: center
-    margin-right: 60px
+    max-width: 100px
+    margin-right: 50px
     color: #000000
     +roboto_regular
     &__image
@@ -40,13 +41,15 @@
     &__name
       display: block
       margin-bottom: 8px
+      text-align: center
     &__position
       display: block
+      text-align: center
   &-text
     display: block
     margin-top: 37px
-    margin-right: 33px
-    max-width: 390px
+    margin-right: 30px
+    max-width: 370px
     position: relative
     &:before
       display: block
@@ -144,11 +147,13 @@
       &__item
         margin: 60px 0
     .slick
+      &-dots
+        bottom: 55px
       &-prev
         top: 246px
         left: 5vw
         &::after
-          width: 300px
+          width: 50vw
       &-next
         top: 246px
         right: 5vw

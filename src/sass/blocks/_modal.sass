@@ -6,14 +6,16 @@
   height: 100%
   background-color: rgba(#000, 0.5)
   display: none
+  z-index: 3
   &_active
     display: flex
+    // z-index: 3
   &-dialog
     position: relative
     margin: auto
-    max-width: 565px
-    width: 70%
-    height: 450px
+    // max-width: 565px
+    max-width: 70%
+    max-height: 450px
     background-color: #c5c5c5
     padding: 43px 101px 43px 95px
     display: flex
@@ -70,12 +72,12 @@
     // padding: 26px 10px
     margin-top: 10px
     margin-bottom: 20px
-@media (max-width: 768px) and (max-height: 768px)
+@media screen and (max-height: 768px)
   .modal
     &-dialog
-      height: 450px
-      width: 370px
-      padding: 18px 40px
+      // height: 450px
+      max-width: 50%
+      padding: 30px 40px
       &__title
         font-size: 18px
         line-height: 1
@@ -95,12 +97,11 @@
       padding: 16px 28px
       margin-bottom: 5px
       margin-top: 5px
-@media (max-width: 567px) and (max-height: 567px)
+@media screen and (max-height: 567px)
   .modal
     &-dialog
-      // height: 390px 
+      max-width: 60%
       padding: 30px 20px
-      width: 70%
       &__title
         font-size: 16px
         line-height: 27px
@@ -123,12 +124,11 @@
       padding: 12px 28px
       margin-bottom: 0px
       margin-top: 5px
-@media (max-width: 320px) and (max-height: 320px)
+@media screen and (max-height: 320px)
   .modal
     &-dialog
-      height: 310px
-      width: 80%
-      padding: 15px 10px
+      max-width: 90%
+      padding: 30px 20px
       &__title
         font-size: 14px
         line-height: 1
