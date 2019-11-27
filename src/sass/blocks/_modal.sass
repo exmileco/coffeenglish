@@ -9,15 +9,14 @@
   z-index: 3
   &_active
     display: flex
-    // z-index: 3
   &-dialog
     position: relative
     margin: auto
-    // max-width: 565px
-    max-width: 70%
+    max-width: 450px
+    // max-width: 40%
     max-height: 450px
     background-color: #c5c5c5
-    padding: 43px 101px 43px 95px
+    padding: 60px 80px 43px 60px
     display: flex
     flex-direction: column
     align-items: center
@@ -31,25 +30,20 @@
       font-size: 30px
       line-height: 0
     &__title
-      // display: block
-      // max-width: 291px
       text-align: center
       font-size: 22px
       line-height: 25px
-      margin-bottom: 20px
+      margin-bottom: 15px
       padding-top: 0
       border-top: 0
       +roboto_bold
     &__subtitle
-      // display: block
       text-align: center
       font-size: 15px
       font-weight: 400
       line-height: 20px
-      margin-bottom: 25px
+      margin-bottom: 30px
     &__subtitle2
-      // display: block
-      // max-width: 271px
       font-size: 15px
       font-weight: 400
       line-height: 20px
@@ -65,17 +59,16 @@
 .form
   &__input
     width: 100%
-    // padding: 23px 24px
-    margin-bottom: 15px
+    padding: 5px
+    margin-bottom: 20px
   &__button
     width: 100%
-    // padding: 26px 10px
-    margin-top: 10px
+    border-radius: 13px 
+    padding: 7px 35px
     margin-bottom: 20px
-@media screen and (max-height: 768px)
+@media screen and (max-width: 768px)
   .modal
     &-dialog
-      // height: 450px
       max-width: 50%
       padding: 30px 40px
       &__title
@@ -88,16 +81,7 @@
         margin-bottom: 20px
   .form
     margin: 12px 0
-    &__input
-      // font-size: 14px
-      padding: 15px 18px
-      margin-bottom: 5px
-    &__button
-      // font-size: 14px
-      padding: 16px 28px
-      margin-bottom: 5px
-      margin-top: 5px
-@media screen and (max-height: 567px)
+@media screen and (max-width: 567px)
   .modal
     &-dialog
       max-width: 60%
@@ -117,14 +101,9 @@
     margin: 12px 0
     &__input
       font-size: 14px
-      padding: 8px 13px
-      margin-bottom: 5px
     &__button
       font-size: 14px
-      padding: 12px 28px
-      margin-bottom: 0px
-      margin-top: 5px
-@media screen and (max-height: 320px)
+@media screen and (max-width: 320px)
   .modal
     &-dialog
       max-width: 90%
@@ -148,13 +127,8 @@
     &__input
       font-size: 14px
       width: 100%
-      margin-bottom: 5px
-      padding: 10px 15px
       font-size: 14px
     &__button
       font-size: 14px
       width: 100%
-      margin-top: 10px
-      margin-bottom: 10px
-      padding: 15px 22px
       font-size: 14px

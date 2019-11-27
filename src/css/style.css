@@ -428,7 +428,6 @@ img {
   padding: 8px 33px;
   background-color: #0099f1;
   border: none;
-  border-radius: 13px;
   border: none;
 }
 
@@ -1024,6 +1023,7 @@ span.invalid {
 
 .header-contacts__button {
   padding: 5px 33px;
+  border-radius: 13px;
   margin-bottom: 4px;
   background-color: #c5c5c5;
   font-family: 'Roboto - Regular', sans-serif;
@@ -1372,6 +1372,7 @@ span.invalid {
 
 .hero-form__button {
   padding: 7px 35px;
+  border-radius: 13px;
   max-width: 145px;
   font-size: 14px;
   color: #ffffff;
@@ -2946,6 +2947,7 @@ span.invalid {
   margin-top: 31px;
   margin-left: -30px;
   padding: 7px 32px;
+  border-radius: 13px;
   color: #ffffff;
   font-size: 14px;
 }
@@ -3154,10 +3156,10 @@ span.invalid {
 .modal-dialog {
   position: relative;
   margin: auto;
-  max-width: 70%;
+  max-width: 450px;
   max-height: 450px;
   background-color: #c5c5c5;
-  padding: 43px 101px 43px 95px;
+  padding: 60px 80px 43px 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3185,7 +3187,7 @@ span.invalid {
   text-align: center;
   font-size: 22px;
   line-height: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding-top: 0;
   border-top: 0;
   font-family: 'Roboto - Bold', sans-serif;
@@ -3198,7 +3200,7 @@ span.invalid {
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .modal-dialog__subtitle2 {
@@ -3222,16 +3224,18 @@ span.invalid {
 
 .form__input {
   width: 100%;
-  margin-bottom: 15px;
+  padding: 5px;
+  margin-bottom: 20px;
 }
 
 .form__button {
   width: 100%;
-  margin-top: 10px;
+  border-radius: 13px;
+  padding: 7px 35px;
   margin-bottom: 20px;
 }
 
-@media screen and (max-height: 768px) {
+@media screen and (max-width: 768px) {
   .modal-dialog {
     max-width: 50%;
     padding: 30px 40px;
@@ -3249,18 +3253,9 @@ span.invalid {
   .form {
     margin: 12px 0;
   }
-  .form__input {
-    padding: 15px 18px;
-    margin-bottom: 5px;
-  }
-  .form__button {
-    padding: 16px 28px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-  }
 }
 
-@media screen and (max-height: 567px) {
+@media screen and (max-width: 567px) {
   .modal-dialog {
     max-width: 60%;
     padding: 30px 20px;
@@ -3285,18 +3280,13 @@ span.invalid {
   }
   .form__input {
     font-size: 14px;
-    padding: 8px 13px;
-    margin-bottom: 5px;
   }
   .form__button {
     font-size: 14px;
-    padding: 12px 28px;
-    margin-bottom: 0px;
-    margin-top: 5px;
   }
 }
 
-@media screen and (max-height: 320px) {
+@media screen and (max-width: 320px) {
   .modal-dialog {
     max-width: 90%;
     padding: 30px 20px;
@@ -3324,16 +3314,11 @@ span.invalid {
   .form__input {
     font-size: 14px;
     width: 100%;
-    margin-bottom: 5px;
-    padding: 10px 15px;
     font-size: 14px;
   }
   .form__button {
     font-size: 14px;
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 15px 22px;
     font-size: 14px;
   }
 }
