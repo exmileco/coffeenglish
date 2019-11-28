@@ -19,19 +19,41 @@
     margin-bottom: 20px
     max-width: 579px
     &__title
-      margin-top: 48px
-      margin-bottom: 5px
+      margin-top: 25px
+      margin-bottom: 0px
       max-width: 540px
       +roboto_medium
       font-size: 25px
     &__subtitle
       margin-bottom: 10px
-      +roboto_medium
-      font-size: 20px
+      +roboto_regular
+      font-size: 18px
       max-width: 511px
   &-list
-    margin-top: 13px
-    &__item
+    margin-top: 20px
+    &__img
+      filter: invert(63%) sepia(58%) saturate(289%) hue-rotate(350deg) brightness(89%) contrast(90%)
+      max-width: 20px
+    &__icon
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      border: 2px #C39667 solid
+      // background-color: #3f2921
+      // margin-right: 10px
+      // padding: 10px
+      display: flex
+      align-items: center
+      justify-content: center
+    &__text
+      display: block
+      font-size: 18px
+      padding-left: 10px
+      +roboto_light
+    &-item
+      display: flex
+      align-items: center
+      // justify-content: space-between
       list-style: none
       margin-bottom: 12px
   &-form
@@ -78,8 +100,8 @@
       &__subtitle
         font-size: 18px
     &-list
-      &__item
-        font-size: 0.9em
+      &__text
+        font-size: 14px
     &-form
       &__title
         font-size: 0.9em
@@ -99,9 +121,9 @@
       &__subtitle
         font-size: 16px
     &-list
-      margin-top: 0
-      &__item
-        font-size: 0.9em
+      margin-top: 10px
+      &__text
+        font-size: 14px
     &-form
       margin-top: 10px
       margin-bottom: 40px
@@ -131,14 +153,37 @@
     left: 0vw
     top: 29px
   .hero
+    &-list
+      // &__text
+      //   font-size: 14px
+      &__icon
+        max-width: 30px
+        height: 30px
+        // flex-basis: 10%
+        // padding: 7px
+      &__img
+        max-width: 15px
+      // &__text
+        // flex-basis: 90%
     &-block
       max-width: 100%
       padding-top: 50vw
     &-form
       justify-content: center
+      align-items: center
+      &__title
+        text-align: center
 @media screen and (max-width: 320px)
   .hero
+    &-list
+      &__icon
+        flex-basis: 10%
+      &__text
+        font-size: 14px
+        flex-basis: 90%
     &-form
+      &__title
+        text-align: center
       &__input
         margin: 5px auto
         flex-basis: 100%
